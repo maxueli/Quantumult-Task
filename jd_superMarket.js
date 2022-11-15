@@ -225,6 +225,7 @@ function receiveBlueCoin(timeout = 0) {
           } else {
             data = JSON.parse(data);
             $.data = data;
+            console.log($.data,'$data')
             if ($.data.data.bizCode !== 0 && $.data.data.bizCode !== 809) {
               $.coinerr = `${$.data.data.bizMsg}`;
               message += `【收取小费】${$.data.data.bizMsg}\n`;
