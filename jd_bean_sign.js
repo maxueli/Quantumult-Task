@@ -285,11 +285,11 @@ hostname = ms.jr.jd.com, me-api.jd.com, api.m.jd.com
           ); //京东金融 京豆双签
           break;
         default: //京东京豆
-        //金融钢镚
-        //京东领现金
-        //京东秒杀
-        //京东金融 金贴双签
-        //京东金融 京豆双签
+          //金融钢镚
+          //京东领现金
+          //京东秒杀
+          //京东金融 金贴双签
+          //京东金融 京豆双签
           await JingDongBean(0);
           // await JingDongStore(Wait(stop)); //京东超市
           await JingRongSteel(Wait(stop), jrBody);

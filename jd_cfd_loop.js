@@ -3213,7 +3213,6 @@ async function queryshell() {
           data = JSON.parse(
             data.replace(/\n/g, "").match(new RegExp(/jsonpCBK.?\((.*);*\)/))[1]
           );
-          console.log(data, "1111111111111111");
           $.canpick = true;
           for (let key of Object.keys(data.Data.NormShell)) {
             let vo = data.Data.NormShell[key];

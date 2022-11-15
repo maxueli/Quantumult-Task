@@ -265,7 +265,6 @@ function getToken() {
         } else {
           if (safeGet(data)) {
             data = JSON.parse(data);
-            console.log(data, "111111111111");
             $.token = data.data.secretPin;
           }
         }

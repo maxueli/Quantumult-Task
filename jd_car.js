@@ -123,13 +123,11 @@ function check() {
     $.get(taskUrl("v1/user/exchange/bean/check"), (err, resp, data) => {
       try {
         if (err) {
-          console.log(resp, "resp");
           data = JSON.parse(resp.body);
           console.log(`${data.error.msg}`);
           message += `签到失败，${data.error.msg}\n`;
         } else {
           if (safeGet(data)) {
-            console.log(data, "data1111111111111111111");
             data = JSON.parse(data);
             console.log(`兑换结果：${JSON.stringify(data)}`);
           }
